@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  /* FONTS */
+  --pc-primary-font: "open sans", sans-serif;
+
+  /*  COLORS */
+  --pc-color-1: rgb(255, 255, 255);
+  --pc-color-2: rgb(51, 51, 51);
+  --pc-color-3: rgb(204, 204, 204);
+  --pc-color-4: #118000;
+  --pc-color-5: rgb(255, 96, 0);
+  --pc-color-6: #BF0019;
+  --pc-color-7: #737373;
+  --pc-color-8: #333333;
+
+  /* BACKGROUND-COLORS */
+  --pc-primary-bg: var(--pc-color-1);
+  --pc-secondary-bg: var(--pc-color-6);
+  --pc-tertiary-bg: var(--pc-color-5);
+  
+
+  /* TEXT-COLORS */
+  --pc-primary-text: var(--pc-color-7);
+  --pc-secondary-text: var(--pc-color-8)
+  --pc-tertiary-text: var(--pc-color-6);
+  --pc-special-text: var(--pc-color-4);
+  --pc-special-v2-text: var(--pc-color-1);
+
+  /* BORDER RADIUS */
+  --pc-primary-br: 15px;
+  --pc-secondary-br: 10px;
+
+  /* SPACINGS */
+  --pc-margin-xs: 10px;
+  --pc-margin-s: 20px;
+  --pc-margin-m: 30px;
+  --pc-margin-l: 40px;
+  --pc-margin-xl: 50px;
+  --pc-margin-section: 100px;
+  
+
+  --pc-padding-xs: 10px;
+  --pc-padding-s: 20px;
+  --pc-padding-m: 30px;
+  --pc-padding-l: 40px;
+  --pc-padding-xl: 50px;
+
+  --pc-gap-xs: 10px;
+  --pc-gap-s: 20px;
+  --pc-gap-m: 30px;
+  --pc-gap-l: 40px;
+  --pc-gap-xl: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: --pc-primary-font;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+body{
+  background-color: var(--pc-color-1);
+}
+.logo{
+  width:150px;
+}
+.icono{
+  width:24px;
+  height:24px;
+  margin-top: var(--pc-margin-xs);
+}
+.icono:hover{
+  background-color: var(--pc-color-3);
+}  
+  
+
+.header{
+ padding:var(--pc-margin-m);
+ 
+}
+
+.nav-bar{
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  padding: var(--pc-padding-m);
+  justify-content: space-between;
+  border-top:1px solid var(--pc-color-7);
+  border-bottom: 1px solid var(--pc-color-7);
+  height: 100px;
+}   
+ 
+  
+
+.contador{
+position:relative;
+bottom: 20px;
+font-size: 15px;
+right: 10px;
+background-color: var(--pc-color-6);
+border-radius: 50%;
+color:var(--pc-color-1);
+padding: 0 2px;
+font-weight: 600;
+}
+.nav-bar2{
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  padding: var(--pc-padding-m);
+  justify-content: space-between;
+  border-bottom: 1px solid var(--pc-color-7);
+  }
+  .nav-bar2  a{
+    font-family: var(--pc-primary-font);
+    color:var(--pc-color-7);
+  }
+  .nav-bar2 .special{
+    color:var(--pc-color-5);
+    font-weight: 700px;
+  }
+ .nav-bar2 li:hover{
+  background-color: var(--pc-color-3);
+ }
+ span, p{
+  font-family: var(--pc-primary-font);
+  padding: var(--pc-padding-s);
+  font-size: 15px;
+ }
+ span{
+  font-weight: bold;
+ }
+ .pcdays img{
+  width:95%;
+  margin:var(--pc-margin-s) var(--pc-margin-s);
+  border-radius: var(--pc-primary-br);
+ }
+ h2{
+  font-size:25px;
+  margin: var(--pc-margin-m);
+  font-family: var(--pc-primary-font);
+  color: var(--pc-color-8);
+  
+ }
+ h4{
+  width: 60%;
+  margin: var(--pc-margin-s);
+ }
+ .ofertas-semana{
+  display:flex;
+  flex-wrap: wrap;
+  margin: var(--pc-margin-m);
+  justify-content: justify;
+ } 
+ .descuento{
+  position:relative;
+  bottom: 132px;
+  left: 20px;
+  font-size: 14px;
+  color:var(--pc-color-1);
+  border-radius: 5px;
+  background-color: var(--pc-secondary-bg);
+  padding: 2px 5px;  
+ }   
+article{
+  max-width:200px;
+  gap: var(--pc-gap-l);
+  
+ }  
+  h4{
+    font-family: var(--pc-primary-font);
+    color:var(--pc-color-8);
+    font-size: 16px;
+    width:70%;
+  }
+  .precio{
+    color: var(--pc-color-6);
+    font-weight:bold;
+    font-family: var(--pc-primary-font);
+    font-size: 18px;
+ }
+  .pvpr{
+    font-family: var(--pc-primary-font);
+    font-size: 14px;
+    color: var(--pc-color-7);
+    text-decoration: line-through;
+    position: relative;
+    right: 35px;
+  }
+  .precio-historico{
+    color:var(--pc-color-6);
+    width:300px;
+    position:relative;
+    bottom: 20px;
+    font-size: 12px;
+  }
+  .envio{
+    color: var(--pc-color-4);
+    font-weight: bold;
+    position:relative;
+    bottom: 20px;
+  }
+  .recibido{
+    position: relative;
+    bottom: 50px;
+    color: var(--pc-color-4);
+    font-size: 12px;
+
+  }
+  article .pcdays{
+    background-color: rgb(9, 9, 70);
+    padding: 2px 5px;
+    color: var(--pc-color-1);
+    font-weight: bold;
+    border-radius: 5px;
+    position:absolute;
+    top:150px;
+    right: 125px;
+    font-size: 12px;
+  }
+  article{
+    position:relative;
+  }
+  article img:hover{
+    transform: scale(1.1);
+    transition: all 300ms;
+  }
+  .categorias-tendencia{
+    display:flex;
+    margin: var(--pc-margin-m);
+    flex-wrap: wrap;
+    gap: var(--pc-gap-m);
+  }   
+  
+  .categorias {
+   text-align: center; 
+   } 
+   
+  .producto{
+    width: 310px;
+    border-radius: var(--pc-primary-br);
+    
+  }  
+  
+ 
+/* MEDIA QUERY */
+
+ @media (max-width:390px){
+  .nav-bar2{
+    display:none;
+   }  
+   .logo{
+    width:100px;
+  }
+  span, p{
+   font-size: 10px;
+ }
+ .contador{
+  right: 5px;
+  }
+  h2{
+    font-size: 20px;
+  }
+}     
+    
+   
+@media (min-width:375px) and (max-width:768px){
+  .nav-bar2{
+    display:none;
+   }  
+}
